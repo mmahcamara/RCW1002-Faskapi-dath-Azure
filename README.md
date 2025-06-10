@@ -1,2 +1,9 @@
 # RCW1002-Faskapi-dath-Azure
 
+dash==3.0.4
+fastapi==0.115.12
+gunicorn==23.0.0
+python-multipart==0.0.20
+requests==2.32.3
+uvicorn==0.34.3
+ 
