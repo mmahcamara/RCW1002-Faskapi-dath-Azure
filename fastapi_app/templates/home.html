@@ -1,5 +1,16 @@
-{%   extends "base.html" %}
+{% extends "base.html" %}
 
 {%  block title%}  Home {% endblock%}
 
-{% block content%} il s'agit d'une application Web qui intègre FastAPI et Dash pour la visualisation des données et la gestion des utilisateurs. {% endblock %}
+
+{%  block content %} 
+
+    <h1> il s'agit d'une application Web qui intègre FastAPI et Dash pour la visualisation des données et la gestion des utilisateurs. </h1>
+    <div class="info-box">
+        <h2>Aujoud'hui est {{info.date}} et il est {{info.time}}</h2>
+
+        <p>City : {{info.weather.city}}</p>
+        <p> Temperature : {{info.weather.temperature}}</p>
+        <p> Description : {{info.weather.description}}</p>
+    </div>
+{% endblock%}
